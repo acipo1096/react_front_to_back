@@ -1,8 +1,13 @@
 // This is the main app component
+// A fragment is just an empty angle bracket
+
 
 function App() {
     return (
-        <h1>Hello from the app component</h1>
+        <div className="container">
+            <h1>My App</h1>
+            <p>Hello</p>
+        </div>
     )
 }
 
