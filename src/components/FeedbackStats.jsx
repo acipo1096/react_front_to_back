@@ -1,5 +1,5 @@
 import {useContext} from 'react'
-import FeedbackContext from "../context/FeedbackContact"
+import FeedbackContext from "../context/FeedbackContext"
 
 function FeedbackStats() {
     // Calculate ratings avg
