@@ -41,6 +41,14 @@ export const FeedbackProvider = ({children}) => {
         }
     }
 
+    // Update feedback item
+    const updateFeedback = (id, updItem) => {
+        setFeedback(
+            feedback.map((item) => (item.id === id ? {...item, 
+            ...updItem } : item))
+        )
+    }
+
     // Set item to be updated
     const editFeedback = (item) => {
         setFeedbackEdit({
@@ -54,7 +62,8 @@ export const FeedbackProvider = ({children}) => {
         addFeedback,
         deleteFeedback,
         editFeedback, // function that runs when clicked
-        feedbackEdit //actual piece of state that holds the bool
+        feedbackEdit, //actual piece of state that holds the bool
+        updateFeedback
 
     }}>
         {children}
