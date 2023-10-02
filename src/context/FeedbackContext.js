@@ -35,7 +35,7 @@ export const FeedbackProvider = ({children}) => {
             body: JSON.stringify(newFeedback)
         })
 
-        const data = await response.json
+        const data = await response.json()
 
         setFeedback([data,...feedback])
     }

@@ -11,17 +11,6 @@ function FeedbackList() {
     return <p>No Feedback Yet</p>;
   }
 
-  // return (
-  //   <div className="feedback-list">
-  //     {feedback.map((item) => (
-  //       <FeedbackItem 
-  //       key={item.id}
-  //       item={item}
-  //       handleDelete={handleDelete}/>
-  //     ))}
-  //   </div>
-  // );
-
   return isLoading ? (
     <Spinner />
   ) : (
